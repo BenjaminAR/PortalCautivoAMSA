@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+
+html {
+    box-sizing: border-box;
+    /* Hacer que el paddig, border no afecte el acho de nuestros elementos */
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* Hereda las propiedades del elemento padre que en este caso es el HTML */
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenedor {
+    background-image: url(img/Arte.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .contenedor {
+        background-image: url(img/ArteFon.jpg);
+    }
+}
+
+
+.transparencia {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.680);
+    width: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aviso {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin: .8rem 3rem;
+}
+
+.header p {
+    margin: 2rem;
+}
+
+.formulario {
+    font-size: 1.3rem;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.formulario label{
+    color: white;
+}
+
+.formulario input {
+    padding: 10px;
+    font-weight: 1rem;
+    width: 26rem;
+    color: rgb(0, 0, 0);
+}
+
+.boton {
+    background-color: #C5140C;
+    color: white !important;
+    font-weight: bold;
+    border: solid 1px #C5140C;
+    height: 4rem;
+    width: 26rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+    color: #C5140C !important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
